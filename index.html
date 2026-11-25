@@ -1,0 +1,1231 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>sitetradehelpcn - 外贸站点建设与跨境交易服务 | 让每一个中国品牌被世界看见</title>
+<meta name="description" content="sitetradehelpcn 专注外贸独立站建设、跨境交易支持与全链路数字化服务，帮助中国制造与品牌高效连接全球买家，打造可持续增长的跨境贸易生态。">
+<style>
+:root{
+  --ink:#0c1521;
+  --ink-2:#1a2735;
+  --paper:#f7f5f0;
+  --paper-2:#efece4;
+  --line:#d9d4c8;
+  --brand:#0f6b58;
+  --brand-2:#149179;
+  --accent:#e8622c;
+  --accent-2:#f08a4b;
+  --gold:#c9a227;
+  --muted:#6b7885;
+  --white:#ffffff;
+  --shadow:0 18px 50px rgba(12,21,33,.12);
+  --shadow-sm:0 8px 24px rgba(12,21,33,.08);
+  --radius:18px;
+  --max:1240px;
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,-apple-system,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--font);
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+.container{width:min(100% - 48px,var(--max));margin-inline:auto}
+.section{padding:110px 0}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--brand);font-weight:700;margin-bottom:18px;
+}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--brand)}
+h2{font-size:clamp(1.8rem,3.4vw,2.7rem);line-height:1.28;letter-spacing:-.01em;font-weight:800}
+h3{font-size:1.22rem;line-height:1.4;font-weight:700}
+p{color:var(--muted)}
+.lead{font-size:1.06rem;color:#495664;max-width:64ch}
+.section-head{margin-bottom:56px;max-width:760px}
+.section-head p{margin-top:18px}
+
+/* ---------- Topbar ---------- */
+.topbar{
+  background:var(--ink);color:#b9c4cf;font-size:.8rem;
+  letter-spacing:.04em;
+}
+.topbar .container{
+  display:flex;justify-content:space-between;align-items:center;
+  min-height:38px;gap:16px;flex-wrap:wrap;
+}
+.topbar-links{display:flex;gap:22px;flex-wrap:wrap}
+.topbar a{transition:color .2s}
+.topbar a:hover{color:var(--accent-2)}
+.topbar .dot{color:var(--brand-2)}
+
+/* ---------- Header ---------- */
+header.site{
+  position:sticky;top:0;z-index:60;
+  background:rgba(247,245,240,.86);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+}
+.nav{
+  display:flex;align-items:center;justify-content:space-between;
+  min-height:78px;gap:24px;
+}
+.logo{display:flex;align-items:center;gap:12px;font-weight:800;font-size:1.12rem;letter-spacing:-.01em}
+.logo-mark{
+  width:42px;height:42px;border-radius:12px;
+  background:linear-gradient(140deg,var(--brand),var(--brand-2));
+  display:grid;place-items:center;color:#fff;font-size:.82rem;font-weight:800;
+  box-shadow:0 10px 24px rgba(15,107,88,.28);
+}
+.logo small{display:block;font-size:.62rem;letter-spacing:.2em;color:var(--muted);font-weight:600}
+.nav-links{display:flex;gap:34px;font-size:.94rem;font-weight:600}
+.nav-links a{position:relative;padding:6px 0;color:var(--ink-2)}
+.nav-links a::after{
+  content:"";position:absolute;left:0;bottom:-2px;width:0;height:2px;
+  background:var(--accent);transition:width .28s ease;
+}
+.nav-links a:hover::after{width:100%}
+.nav-cta{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--ink);color:#fff;padding:12px 22px;border-radius:999px;
+  font-size:.9rem;font-weight:700;transition:transform .2s,background .2s;
+}
+.nav-cta:hover{background:var(--brand);transform:translateY(-2px)}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:8px}
+.burger span{width:24px;height:2px;background:var(--ink);border-radius:2px;transition:.25s}
+
+/* ---------- Hero ---------- */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(900px 500px at 82% -8%,rgba(20,145,121,.16),transparent 62%),
+    radial-gradient(700px 420px at 6% 108%,rgba(232,98,44,.12),transparent 60%),
+    var(--paper);
+  padding:96px 0 118px;
+}
+.hero-grid{
+  display:grid;grid-template-columns:1.08fr .92fr;gap:64px;align-items:center;
+}
+.hero h1{
+  font-size:clamp(2.6rem,5.6vw,4.4rem);
+  line-height:1.04;letter-spacing:-.03em;font-weight:900;margin:14px 0 26px;
+}
+.hero h1 .accent{
+  background:linear-gradient(100deg,var(--brand),var(--brand-2) 55%,var(--accent));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero p.lead{margin-bottom:36px}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:15px 30px;border-radius:999px;font-weight:700;font-size:.95rem;
+  transition:transform .2s,box-shadow .2s,background .2s;
+  border:1px solid transparent;cursor:pointer;
+}
+.btn-primary{background:var(--brand);color:#fff;box-shadow:0 14px 32px rgba(15,107,88,.28)}
+.btn-primary:hover{background:var(--brand-2);transform:translateY(-3px);box-shadow:0 20px 40px rgba(15,107,88,.34)}
+.btn-ghost{background:transparent;border-color:var(--line);color:var(--ink-2)}
+.btn-ghost:hover{border-color:var(--ink);transform:translateY(-3px)}
+.hero-meta{
+  display:flex;gap:44px;margin-top:52px;padding-top:34px;border-top:1px solid var(--line);flex-wrap:wrap;
+}
+.hero-meta strong{display:block;font-size:1.9rem;font-weight:900;letter-spacing:-.02em;color:var(--ink)}
+.hero-meta span{font-size:.82rem;color:var(--muted);letter-spacing:.04em}
+
+/* Hero visual */
+.hero-visual{position:relative}
+.visual-card{
+  position:relative;border-radius:26px;overflow:hidden;
+  background:linear-gradient(160deg,#0c1521,#173a45 60%,#0f6b58);
+  box-shadow:var(--shadow);aspect-ratio:4/4.6;padding:30px;
+  color:#e6eef2;display:flex;flex-direction:column;justify-content:space-between;
+}
+.visual-card::after{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(400px 300px at 90% 8%,rgba(240,138,75,.35),transparent 60%),
+    radial-gradient(320px 320px at 0% 100%,rgba(20,145,121,.4),transparent 64%);
+  pointer-events:none;
+}
+.visual-top{display:flex;justify-content:space-between;align-items:flex-start;position:relative;z-index:2}
+.live-pill{
+  display:inline-flex;align-items:center;gap:8px;font-size:.72rem;letter-spacing:.16em;
+  text-transform:uppercase;color:#b7f0e2;font-weight:700;
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);
+  padding:7px 14px;border-radius:999px;
+}
+.live-dot{width:7px;height:7px;border-radius:50%;background:#3ee6b8;box-shadow:0 0 0 0 rgba(62,230,184,.6);animation:pulse 2s infinite}
+@keyframes pulse{
+  0%{box-shadow:0 0 0 0 rgba(62,230,184,.55)}
+  70%{box-shadow:0 0 0 12px rgba(62,230,184,0)}
+  100%{box-shadow:0 0 0 0 rgba(62,230,184,0)}
+}
+.visual-clock{font-variant-numeric:tabular-nums;font-size:.78rem;color:#9fb4bf;letter-spacing:.1em}
+.visual-body{position:relative;z-index:2}
+.visual-body .kicker{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:#8fd8c6;font-weight:700}
+.visual-body .big{font-size:2rem;font-weight:800;line-height:1.2;margin:12px 0 8px;letter-spacing:-.02em}
+.visual-body .sub{font-size:.86rem;color:#a9bcc6}
+.globe-wrap{position:relative;z-index:2;display:grid;place-items:center;padding:10px 0}
+.pulse-line{stroke-dasharray:6 7;animation:dash 22s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-620}}
+.visual-foot{
+  position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;
+  padding-top:18px;border-top:1px solid rgba(255,255,255,.14);font-size:.76rem;color:#9fb4bf;
+}
+.visual-foot b{color:#fff;font-weight:700}
+.float-chip{
+  position:absolute;right:-16px;bottom:64px;z-index:3;
+  background:#fff;border-radius:16px;padding:16px 20px;box-shadow:var(--shadow);
+  display:flex;align-items:center;gap:14px;animation:floaty 6s ease-in-out infinite;
+}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.float-chip .ico{
+  width:40px;height:40px;border-radius:12px;background:rgba(232,98,44,.12);
+  display:grid;place-items:center;color:var(--accent);font-size:1.1rem;font-weight:900;
+}
+.float-chip strong{display:block;font-size:1rem;letter-spacing:-.01em}
+.float-chip span{font-size:.72rem;color:var(--muted)}
+.float-chip-2{
+  position:absolute;left:-22px;top:36px;z-index:3;
+  background:#fff;border-radius:16px;padding:14px 18px;box-shadow:var(--shadow);
+  display:flex;align-items:center;gap:12px;animation:floaty 7.4s ease-in-out infinite reverse;
+}
+.float-chip-2 .ico{width:34px;height:34px;border-radius:10px;background:rgba(15,107,88,.12);display:grid;place-items:center;color:var(--brand);font-size:.9rem;font-weight:900}
+.float-chip-2 strong{display:block;font-size:.9rem}
+.float-chip-2 span{font-size:.7rem;color:var(--muted)}
+
+/* marquee */
+.marquee{
+  border-block:1px solid var(--line);background:var(--paper-2);overflow:hidden;
+  padding:20px 0;position:relative;
+}
+.marquee::before,.marquee::after{
+  content:"";position:absolute;top:0;bottom:0;width:120px;z-index:2;pointer-events:none;
+}
+.marquee::before{left:0;background:linear-gradient(90deg,var(--paper-2),transparent)}
+.marquee::after{right:0;background:linear-gradient(270deg,var(--paper-2),transparent)}
+.marquee-track{display:flex;gap:56px;width:max-content;animation:scroll 42s linear infinite}
+@keyframes scroll{to{transform:translateX(-50%)}}
+.marquee-track span{
+  font-size:.82rem;letter-spacing:.2em;text-transform:uppercase;color:#7d8a95;
+  font-weight:700;white-space:nowrap;display:flex;align-items:center;gap:56px;
+}
+.marquee-track span::after{content:"◆";color:var(--gold);font-size:.6rem}
+
+/* ---------- Services ---------- */
+.services{background:var(--paper)}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.service-card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:34px 30px;transition:transform .3s,box-shadow .3s,border-color .3s;
+  position:relative;overflow:hidden;
+}
+.service-card::before{
+  content:"";position:absolute;left:0;top:0;width:100%;height:3px;
+  background:linear-gradient(90deg,var(--brand),var(--accent));transform:scaleX(0);transform-origin:left;
+  transition:transform .35s ease;
+}
+.service-card:hover{transform:translateY(-8px);box-shadow:var(--shadow);border-color:transparent}
+.service-card:hover::before{transform:scaleX(1)}
+.service-num{font-size:.72rem;letter-spacing:.2em;color:var(--gold);font-weight:800;margin-bottom:20px}
+.service-ico{
+  width:56px;height:56px;border-radius:16px;display:grid;place-items:center;
+  background:linear-gradient(145deg,rgba(15,107,88,.1),rgba(20,145,121,.04));
+  color:var(--brand);margin-bottom:22px;
+}
+.service-card:hover .service-ico{background:linear-gradient(145deg,var(--brand),var(--brand-2));color:#fff}
+.service-card h3{margin-bottom:12px}
+.service-card p{font-size:.92rem;margin-bottom:18px}
+.service-list{display:flex;flex-direction:column;gap:8px;font-size:.85rem;color:var(--ink-2)}
+.service-list li{display:flex;gap:10px;align-items:flex-start}
+.service-list li::before{content:"✓";color:var(--brand);font-weight:800;flex-shrink:0}
+
+/* ---------- Numbers / stats band ---------- */
+.stats{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.stats::before{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(600px 320px at 88% 0%,rgba(20,145,121,.28),transparent 60%),
+    radial-gradient(520px 300px at 4% 100%,rgba(232,98,44,.2),transparent 60%);
+}
+.stats .container{position:relative;z-index:2}
+.stats-head{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;margin-bottom:64px}
+.stats-head h2{color:#fff}
+.stats-head p{color:#9fb4bf}
+.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:rgba(255,255,255,.1);border-radius:var(--radius);overflow:hidden}
+.stat{
+  background:var(--ink-2);padding:38px 30px;transition:background .3s;
+}
+.stat:hover{background:#1f3241}
+.stat strong{display:block;font-size:clamp(2rem,3.6vw,2.9rem);font-weight:900;letter-spacing:-.02em;color:#fff;line-height:1.1}
+.stat strong em{color:var(--brand-2);font-style:normal}
+.stat span{font-size:.84rem;color:#9fb4bf;margin-top:8px;display:block}
+.stat-note{margin-top:28px;font-size:.78rem;color:#7f939f;letter-spacing:.04em}
+
+/* ---------- Process ---------- */
+.process{background:var(--paper-2)}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line)}
+.step{
+  padding:40px 30px 40px 0;border-right:1px solid var(--line);position:relative;
+}
+.step:last-child{border-right:0;padding-right:0}
+.step-num{
+  font-size:.74rem;font-weight:800;letter-spacing:.2em;color:var(--brand);margin-bottom:22px;
+}
+.step h3{margin-bottom:12px;font-size:1.12rem}
+.step p{font-size:.9rem}
+.step::after{
+  content:"";position:absolute;left:0;bottom:-1px;width:0;height:3px;background:var(--accent);
+  transition:width .4s ease;
+}
+.step:hover::after{width:calc(100% - 30px)}
+
+/* ---------- Solutions split ---------- */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.split-visual{
+  border-radius:26px;overflow:hidden;background:#fff;border:1px solid var(--line);
+  box-shadow:var(--shadow-sm);position:relative;
+}
+.dash{padding:26px}
+.dash-head{display:flex;justify-content:space-between;align-items:center;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.dash-head strong{font-size:.9rem}
+.dash-dots{display:flex;gap:6px}
+.dash-dots i{width:9px;height:9px;border-radius:50%;background:var(--line);display:block}
+.dash-dots i:first-child{background:var(--accent)}
+.dash-dots i:nth-child(2){background:var(--gold)}
+.dash-row{display:flex;align-items:center;justify-content:space-between;padding:16px 0;border-bottom:1px dashed var(--line)}
+.dash-row:last-child{border-bottom:0}
+.dash-row .lbl{font-size:.85rem;color:var(--ink-2);font-weight:600;display:flex;align-items:center;gap:10px}
+.dash-row .lbl i{width:8px;height:8px;border-radius:2px;background:var(--brand);display:block}
+.dash-row .val{font-size:.8rem;font-weight:700;padding:4px 12px;border-radius:999px}
+.v-green{background:rgba(15,107,88,.12);color:var(--brand)}
+.v-orange{background:rgba(232,98,44,.12);color:var(--accent)}
+.v-gold{background:rgba(201,162,39,.16);color:#9a7c12}
+.dash-bar{margin:22px 0 6px}
+.bar-line{height:10px;border-radius:6px;background:var(--paper-2);overflow:hidden;position:relative}
+.bar-line span{position:absolute;inset:0;width:0;border-radius:6px;background:linear-gradient(90deg,var(--brand),var(--brand-2));transition:width 1.4s cubic-bezier(.2,.8,.2,1)}
+.bar-meta{display:flex;justify-content:space-between;font-size:.72rem;color:var(--muted);margin-top:8px}
+.split-copy h2{margin:14px 0 22px}
+.split-copy p{margin-bottom:18px}
+.feature-list{display:grid;gap:16px;margin-top:30px}
+.feature-item{display:flex;gap:16px;align-items:flex-start}
+.feature-item .fi-ico{
+  flex-shrink:0;width:42px;height:42px;border-radius:12px;display:grid;place-items:center;
+  background:rgba(15,107,88,.1);color:var(--brand);font-weight:800;font-size:.95rem;
+}
+.feature-item h4{font-size:.98rem;margin-bottom:4px;font-weight:700}
+.feature-item p{font-size:.86rem;margin:0}
+
+/* ---------- Testimonials ---------- */
+.testimonials{background:var(--paper)}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.testi{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:32px 30px;
+  display:flex;flex-direction:column;justify-content:space-between;gap:24px;
+  transition:transform .3s,box-shadow .3s;
+}
+.testi:hover{transform:translateY(-6px);box-shadow:var(--shadow-sm)}
+.quote-mark{font-size:2.4rem;line-height:1;color:var(--brand);font-weight:900;font-family:Georgia,serif;opacity:.35}
+.testi p{color:var(--ink-2);font-size:.94rem;line-height:1.8}
+.testi-person{display:flex;align-items:center;gap:14px;padding-top:18px;border-top:1px solid var(--line)}
+.avatar{
+  width:44px;height:44px;border-radius:50%;display:grid;place-items:center;
+  font-weight:800;color:#fff;font-size:.9rem;flex-shrink:0;
+}
+.a1{background:linear-gradient(140deg,var(--brand),var(--brand-2))}
+.a2{background:linear-gradient(140deg,var(--accent),var(--accent-2))}
+.a3{background:linear-gradient(140deg,#2c3e50,#4a6274)}
+.testi-person strong{display:block;font-size:.9rem;color:var(--ink)}
+.testi-person span{font-size:.76rem;color:var(--muted)}
+.stars{color:var(--gold);letter-spacing:.16em;font-size:.8rem;margin-bottom:4px}
+
+/* ---------- Resources / community ---------- */
+.community{background:var(--ink-2);color:#fff;position:relative;overflow:hidden}
+.community::before{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(700px 380px at 100% 0%,rgba(20,145,121,.22),transparent 60%);
+}
+.community .container{position:relative;z-index:2}
+.community-head{display:flex;justify-content:space-between;align-items:end;gap:32px;flex-wrap:wrap;margin-bottom:56px}
+.community-head h2{color:#fff;max-width:560px}
+.community-head p{color:#9fb4bf;max-width:44ch}
+.res-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.res-card{
+  background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);
+  border-radius:var(--radius);padding:30px 28px;transition:background .3s,transform .3s;
+}
+.res-card:hover{background:rgba(255,255,255,.08);transform:translateY(-6px)}
+.res-tag{
+  display:inline-block;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;
+  color:#8fd8c6;font-weight:700;margin-bottom:18px;
+}
+.res-card h3{color:#fff;font-size:1.08rem;margin-bottom:12px}
+.res-card p{color:#9fb4bf;font-size:.88rem;margin-bottom:20px}
+.res-meta{display:flex;justify-content:space-between;font-size:.76rem;color:#7f939f;padding-top:16px;border-top:1px solid rgba(255,255,255,.1)}
+.res-meta b{color:#3ee6b8;font-weight:700}
+
+/* ---------- FAQ ---------- */
+.faq{background:var(--paper-2)}
+.faq-wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;align-items:start}
+.faq-list{border-top:1px solid var(--line)}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-q{
+  width:100%;background:none;border:0;cursor:pointer;text-align:left;
+  display:flex;justify-content:space-between;align-items:center;gap:20px;
+  padding:24px 0;font-family:inherit;font-size:1.02rem;font-weight:700;color:var(--ink);
+  transition:color .2s;
+}
+.faq-q:hover{color:var(--brand)}
+.faq-q .plus{
+  flex-shrink:0;width:26px;height:26px;border-radius:50%;border:1px solid var(--line);
+  display:grid;place-items:center;font-size:1rem;font-weight:400;transition:.3s;
+}
+.faq-item.open .faq-q .plus{background:var(--brand);border-color:var(--brand);color:#fff;transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.faq-a p{padding-bottom:24px;font-size:.92rem;line-height:1.8;max-width:62ch}
+.faq-side{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:36px 32px;position:sticky;top:110px}
+.faq-side h3{margin-bottom:12px}
+.faq-side p{font-size:.9rem;margin-bottom:24px}
+.contact-mini{display:flex;flex-direction:column;gap:14px;font-size:.88rem}
+.contact-mini a{display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:12px;background:var(--paper);transition:background .2s}
+.contact-mini a:hover{background:rgba(15,107,88,.08)}
+.contact-mini i{
+  width:30px;height:30px;border-radius:9px;background:rgba(15,107,88,.12);
+  display:grid;place-items:center;color:var(--brand);font-style:normal;font-weight:800;font-size:.78rem;flex-shrink:0;
+}
+
+/* ---------- CTA ---------- */
+.cta{
+  background:linear-gradient(120deg,var(--brand),#0b4f43 55%,var(--ink));
+  color:#fff;border-radius:28px;padding:72px 64px;position:relative;overflow:hidden;
+  display:grid;grid-template-columns:1.4fr .6fr;gap:48px;align-items:center;
+  margin:0 auto;
+}
+.cta::before{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(400px 260px at 90% 10%,rgba(240,138,75,.34),transparent 60%),
+    radial-gradient(360px 260px at 10% 100%,rgba(62,230,184,.22),transparent 60%);
+}
+.cta > *{position:relative;z-index:2}
+.cta h2{color:#fff;margin-bottom:16px}
+.cta p{color:#bfe4da;max-width:52ch}
+.cta-actions{display:flex;flex-direction:column;gap:14px;align-items:stretch}
+.btn-light{background:#fff;color:var(--ink);justify-content:center}
+.btn-light:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(0,0,0,.24)}
+.btn-outline{border:1px solid rgba(255,255,255,.4);color:#fff;justify-content:center}
+.btn-outline:hover{background:rgba(255,255,255,.1);transform:translateY(-3px)}
+
+/* ---------- Footer ---------- */
+footer.site{background:var(--ink);color:#9fb4bf;padding:80px 0 0;margin-top:110px}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:48px;padding-bottom:64px}
+.foot-brand .logo{color:#fff;margin-bottom:20px}
+.foot-brand p{font-size:.88rem;color:#8b9aa5;max-width:34ch;margin-bottom:24px}
+.foot-social{display:flex;gap:12px}
+.foot-social a{
+  width:38px;height:38px;border-radius:10px;border:1px solid rgba(255,255,255,.14);
+  display:grid;place-items:center;font-size:.76rem;font-weight:700;color:#cfd9e0;
+  transition:.25s;
+}
+.foot-social a:hover{background:var(--brand);border-color:var(--brand);color:#fff;transform:translateY(-3px)}
+.foot-col h4{color:#fff;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:22px;font-weight:700}
+.foot-col ul{display:flex;flex-direction:column;gap:12px}
+.foot-col a{font-size:.88rem;color:#8b9aa5;transition:color .2s}
+.foot-col a:hover{color:var(--brand-2)}
+.foot-bottom{
+  border-top:1px solid rgba(255,255,255,.1);padding:26px 0;
+  display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
+  font-size:.78rem;color:#6f8090;
+}
+.foot-bottom a{color:#8b9aa5}
+.foot-bottom a:hover{color:var(--brand-2)}
+
+/* ---------- Reveal anim ---------- */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* ---------- Responsive ---------- */
+@media(max-width:1080px){
+  .hero-grid{grid-template-columns:1fr;gap:56px}
+  .hero-visual{max-width:520px}
+  .service-grid,.testi-grid,.res-grid{grid-template-columns:repeat(2,1fr)}
+  .stat-grid{grid-template-columns:repeat(2,1fr)}
+  .split{grid-template-columns:1fr;gap:48px}
+  .faq-wrap{grid-template-columns:1fr;gap:40px}
+  .faq-side{position:static}
+  .cta{grid-template-columns:1fr;padding:52px 40px}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .stats-head{grid-template-columns:1fr}
+  .process-grid{grid-template-columns:repeat(2,1fr)}
+  .step:nth-child(2){border-right:0}
+}
+@media(max-width:720px){
+  .nav-links{display:none}
+  .nav-links.open{
+    display:flex;position:absolute;left:0;right:0;top:100%;
+    flex-direction:column;background:var(--paper);border-bottom:1px solid var(--line);
+    padding:20px 24px;gap:18px;box-shadow:var(--shadow-sm);
+  }
+  .burger{display:flex}
+  .nav-cta{display:none}
+  .topbar-links{display:none}
+  .section{padding:76px 0}
+  .service-grid,.testi-grid,.res-grid,.stat-grid,.process-grid{grid-template-columns:1fr}
+  .step{border-right:0;padding-right:0;padding-block:28px}
+  .hero{padding:64px 0 84px}
+  .hero-meta{gap:28px}
+  .float-chip{right:8px;bottom:24px}
+  .float-chip-2{left:8px}
+  .foot-grid{grid-template-columns:1fr}
+  .foot-bottom{flex-direction:column}
+  .cta{border-radius:20px;padding:40px 26px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- ============ TOPBAR ============ -->
+<div class="topbar">
+  <div class="container">
+    <span>跨境数字贸易服务商 · 全球买家实时在线 <span class="dot">●</span></span>
+    <div class="topbar-links">
+      <a href="#services">服务体系</a>
+      <a href="#process">合作流程</a>
+      <a href="#resources">社区资源</a>
+      <a href="#contact">预约咨询</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="site">
+  <div class="container nav">
+    <a class="logo" href="/">
+      <span class="logo-mark">ST</span>
+      <span>sitetradehelpcn
+        <small>GLOBAL TRADE STUDIO</small>
+      </span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#services">服务方案</a>
+      <a href="#stats">数据实力</a>
+      <a href="#process">合作流程</a>
+      <a href="#solutions">独立站建设</a>
+      <a href="#resources">社区资源</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+    <a class="nav-cta" href="#contact">免费诊断站点 →</a>
+    <button class="burger" id="burger" aria-label="打开菜单">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">外贸独立站 · 跨境交易服务</span>
+      <h1><span class="accent">sitetradehelpcn</span><br>让中国品牌<br>被世界看见</h1>
+      <p class="lead">
+        从站点建设、多语言内容到跨境交易链路与海外买家运营，sitetradehelpcn
+        为外贸企业提供一站式数字化增长方案。我们相信，真正有效的出海，不是把广告投出去，
+        而是把信任建立起来——用专业站点、真实内容与稳定服务，让每一次询盘都有回音。
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#contact">获取站点诊断报告 →</a>
+        <a class="btn btn-ghost" href="#services">查看服务详情</a>
+      </div>
+      <div class="hero-meta">
+        <div><strong>3,200+</strong><span>服务外贸企业</span></div>
+        <div><strong>48h</strong><span>站点方案交付</span></div>
+        <div><strong>68 个</strong><span>覆盖国家与地区</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="visual-card">
+        <div class="visual-top">
+          <span class="live-pill"><span class="live-dot"></span>LIVE TRAFFIC</span>
+          <span class="visual-clock" id="clock">UTC+08 00:00:00</span>
+        </div>
+        <div class="globe-wrap">
+          <svg viewBox="0 0 320 240" width="100%" aria-hidden="true">
+            <defs>
+              <linearGradient id="gline" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#3ee6b8"/>
+                <stop offset="100%" stop-color="#f08a4b"/>
+              </linearGradient>
+            </defs>
+            <g stroke="rgba(255,255,255,.16)" fill="none" stroke-width="1">
+              <circle cx="160" cy="120" r="96"/>
+              <ellipse cx="160" cy="120" rx="96" ry="38"/>
+              <ellipse cx="160" cy="120" rx="96" ry="70"/>
+              <ellipse cx="160" cy="120" rx="38" ry="96"/>
+              <ellipse cx="160" cy="120" rx="70" ry="96"/>
+              <line x1="64" y1="120" x2="256" y2="120"/>
+              <line x1="160" y1="24" x2="160" y2="216"/>
+            </g>
+            <path class="pulse-line" d="M70 150 Q120 60 200 92 T268 68" stroke="url(#gline)" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <path class="pulse-line" d="M60 96 Q130 150 190 130 T262 168" stroke="url(#gline)" stroke-width="1.6" fill="none" stroke-linecap="round" opacity=".7"/>
+            <g fill="#3ee6b8">
+              <circle cx="70" cy="150" r="3.4"/>
+              <circle cx="200" cy="92" r="3.4"/>
+              <circle cx="268" cy="68" r="2.6"/>
+              <circle cx="190" cy="130" r="3"/>
+              <circle cx="262" cy="168" r="2.6"/>
+            </g>
+            <g fill="#f08a4b">
+              <circle cx="160" cy="120" r="4.4"/>
+            </g>
+          </svg>
+        </div>
+        <div class="visual-body">
+          <span class="kicker">GLOBAL BUYER NETWORK</span>
+          <div class="big">真实买家 · 实时触达</div>
+          <div class="sub">今日新增询盘 128 条，覆盖 23 个国家</div>
+        </div>
+        <div class="visual-foot">
+          <span>站点健康度 <b>96.4%</b></span>
+          <span>加载速度 <b>1.2s</b></span>
+        </div>
+      </div>
+      <div class="float-chip">
+        <div class="ico">↑</div>
+        <div><strong>+42%</strong><span>自然询盘增长</span></div>
+      </div>
+      <div class="float-chip-2">
+        <div class="ico">✓</div>
+        <div><strong>站点已上线</strong><span>多语言 · 合规</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>独立站建设</span><span>跨境交易支持</span><span>多语言本地化</span><span>海外买家运营</span><span>营销自动化</span><span>站点合规诊断</span><span>SEO 内容策略</span><span>数据看板</span>
+    <span>独立站建设</span><span>跨境交易支持</span><span>多语言本地化</span><span>海外买家运营</span><span>营销自动化</span><span>站点合规诊断</span><span>SEO 内容策略</span><span>数据看板</span>
+  </div>
+</div>
+
+<!-- ============ SERVICES ============ -->
+<section class="section services" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">CORE SERVICES</span>
+      <h2>不止建站，是一整套跨境增长系统</h2>
+      <p class="lead">
+        外贸独立站不是一张电子名片，而是企业面向全球买家的长期信任资产。
+        sitetradehelpcn 将站点、内容、交易与运营连接成闭环，让每一份投入都指向可衡量的询盘与订单。
+      </p>
+    </div>
+
+    <div class="service-grid">
+      <article class="service-card reveal">
+        <div class="service-num">01 / BUILD</div>
+        <div class="service-ico">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M7 13h4"/>
+          </svg>
+        </div>
+        <h3>外贸独立站建设</h3>
+        <p>面向海外买家阅读习惯设计的高转化站点，从信息架构到询盘路径全链路优化。</p>
+        <ul class="service-list">
+          <li>响应式多终端适配</li>
+          <li>产品目录与询盘表单</li>
+          <li>CDN 加速与安全加固</li>
+        </ul>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-num">02 / LOCALIZE</div>
+        <div class="service-ico">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/>
+          </svg>
+        </div>
+        <h3>多语言本地化</h3>
+        <p>语言不是翻译，是文化适配。让站点在目标市场读起来像一家本地企业。</p>
+        <ul class="service-list">
+          <li>英语 / 西语 / 阿语等多语种</li>
+          <li>本地货币与计量单位</li>
+          <li>区域合规与隐私条款</li>
+        </ul>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-num">03 / TRADE</div>
+        <div class="service-ico">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 7h16l-1.5 12h-13z"/><path d="M9 7a3 3 0 0 1 6 0"/>
+          </svg>
+        </div>
+        <h3>跨境交易支持</h3>
+        <p>从询盘到成交，打通报价、支付、物流与售后信息展示，减少买家决策摩擦。</p>
+        <ul class="service-list">
+          <li>在线报价与样品申请</li>
+          <li>支付方式合规展示</li>
+          <li>物流时效透明化</li>
+        </ul>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-num">04 / GROW</div>
+        <div class="service-ico">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 17l5-6 4 3 5-7 4 4"/><path d="M3 21h18"/>
+          </svg>
+        </div>
+        <h3>SEO 与内容策略</h3>
+        <p>围绕买家搜索意图构建内容矩阵，让站点在目标市场持续获得自然流量。</p>
+        <ul class="service-list">
+          <li>关键词研究与栏目规划</li>
+          <li>行业内容与案例撰写</li>
+          <li>技术 SEO 与结构化数据</li>
+        </ul>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-num">05 / OPERATE</div>
+        <div class="service-ico">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 12l3 3 5-6"/>
+          </svg>
+        </div>
+        <h3>站点运维与健康监测</h3>
+        <p>上线只是开始。持续监测加载速度、安全状态与转化漏斗，让站点长期稳定输出。</p>
+        <ul class="service-list">
+          <li>可用性与速度监控</li>
+          <li>定期安全与备份</li>
+          <li>转化数据报告</li>
+        </ul>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-num">06 / INSIGHT</div>
+        <div class="service-ico">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="6"/><path d="M16 16l4 4M8.5 11h5M11 8.5v5"/>
+          </svg>
+        </div>
+        <h3>买家行为洞察</h3>
+        <p>用数据理解海外买家在看什么、停在哪里、为什么离开，指导页面持续迭代。</p>
+        <ul class="service-list">
+          <li>访问路径与停留分析</li>
+          <li>询盘来源归因</li>
+          <li>A/B 测试与优化建议</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section class="section stats" id="stats">
+  <div class="container">
+    <div class="stats-head reveal">
+      <div>
+        <span class="eyebrow" style="color:#3ee6b8">BY THE NUMBERS</span>
+        <h2>被数字验证的跨境服务能力</h2>
+      </div>
+      <p>
+        我们更愿意用长期数据说话：站点上线率、询盘增长与客户续约率，
+        构成了 sitetradehelpcn 最真实的成绩单。
+      </p>
+    </div>
+    <div class="stat-grid reveal">
+      <div class="stat">
+        <strong data-count="3200" data-suffix="+">0</strong>
+        <span>累计服务外贸企业</span>
+      </div>
+      <div class="stat">
+        <strong data-count="68" data-suffix=" 个">0</strong>
+        <span>覆盖国家与地区</span>
+      </div>
+      <div class="stat">
+        <strong data-count="42" data-prefix="+" data-suffix="%">0</strong>
+        <span>平均自然询盘增长</span>
+      </div>
+      <div class="stat">
+        <strong data-count="94" data-suffix="%">0</strong>
+        <span>年度客户续约率</span>
+      </div>
+    </div>
+    <p class="stat-note">* 数据统计截至本季度，来源为平台站点运营与客户回访记录。</p>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="section process" id="process">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">HOW WE WORK</span>
+      <h2>四步走，把出海想法变成可用的站点</h2>
+      <p class="lead">流程清晰、节点可查、责任人明确。你随时知道项目走到了哪一步。</p>
+    </div>
+    <div class="process-grid reveal">
+      <div class="step">
+        <div class="step-num">STEP 01</div>
+        <h3>需求诊断</h3>
+        <p>梳理产品、目标市场与买家画像，评估现有站点问题，输出诊断清单与优先级建议。</p>
+      </div>
+      <div class="step">
+        <div class="step-num">STEP 02</div>
+        <h3>方案设计</h3>
+        <p>确定信息架构、栏目与转化路径，交付视觉稿与多语言内容框架，确认后进入开发。</p>
+      </div>
+      <div class="step">
+        <div class="step-num">STEP 03</div>
+        <h3>开发上线</h3>
+        <p>响应式开发、性能优化与安全配置，完成测试后部署上线，同步搜索引擎提交。</p>
+      </div>
+      <div class="step">
+        <div class="step-num">STEP 04</div>
+        <h3>运营迭代</h3>
+        <p>监测流量与询盘数据，按周期优化内容与页面，让站点跟随业务持续生长。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOLUTIONS SPLIT ============ -->
+<section class="section" id="solutions" style="background:var(--paper)">
+  <div class="container split">
+    <div class="split-visual reveal">
+      <div class="dash">
+        <div class="dash-head">
+          <strong>站点健康与转化看板</strong>
+          <div class="dash-dots"><i></i><i></i><i></i></div>
+        </div>
+        <div class="dash-row">
+          <span class="lbl"><i></i>页面加载速度</span>
+          <span class="val v-green">1.2s 优秀</span>
+        </div>
+        <div class="dash-row">
+          <span class="lbl"><i></i>移动端适配</span>
+          <span class="val v-green">已通过</span>
+        </div>
+        <div class="dash-row">
+          <span class="lbl"><i></i>多语言覆盖</span>
+          <span class="val v-orange">6 种语言</span>
+        </div>
+        <div class="dash-row">
+          <span class="lbl"><i></i>安全与合规</span>
+          <span class="val v-green">HTTPS 已启用</span>
+        </div>
+        <div class="dash-row">
+          <span class="lbl"><i></i>本月询盘</span>
+          <span class="val v-gold">386 条</span>
+        </div>
+        <div class="dash-bar">
+          <div class="bar-line"><span data-bar="86"></span></div>
+          <div class="bar-meta"><span>转化目标完成度</span><strong>86%</strong></div>
+        </div>
+        <div class="dash-bar">
+          <div class="bar-line"><span data-bar="72"></span></div>
+          <div class="bar-meta"><span>内容更新覆盖率</span><strong>72%</strong></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="split-copy reveal">
+      <span class="eyebrow">SITE AS AN ASSET</span>
+      <h2>把独立站当成资产，而不是成本</h2>
+      <p>
+        很多外贸企业把建站视为一次性支出，结果站点上线即停滞。sitetradehelpcn
+        更倾向于把它看作可持续增值的资产：结构清晰、内容持续、性能稳定，
+        搜索引擎愿意收录，买家愿意停留，团队也愿意维护。
+      </p>
+      <p>
+        我们为每个项目建立可量化的健康指标，并在合作周期内持续跟踪。
+        站点不是交付物的终点，而是增长曲线的起点。
+      </p>
+      <div class="feature-list">
+        <div class="feature-item">
+          <div class="fi-ico">A</div>
+          <div><h4>结构先行</h4><p>先想清楚买家怎么找、怎么看、怎么问，再动笔做视觉。</p></div>
+        </div>
+        <div class="feature-item">
+          <div class="fi-ico">B</div>
+          <div><h4>内容可信</h4><p>产品参数、认证、案例与工厂信息，用可信的方式呈现。</p></div>
+        </div>
+        <div class="feature-item">
+          <div class="fi-ico">C</div>
+          <div><h4>性能兜底</h4><p>速度、安全、稳定是底线，任何视觉选择都不得牺牲体验。</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section testimonials">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">CLIENT VOICES</span>
+      <h2>客户怎么说</h2>
+      <p class="lead">来自制造业、消费品与工业设备领域的真实反馈，是我们最看重的口碑。</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi reveal">
+        <div>
+          <div class="stars">★★★★★</div>
+          <div class="quote-mark">“</div>
+          <p>合作前我们的旧站三年没更新，海外客户经常问‘你们是不是还在运营’。重新建设后，询盘质量明显不同，客户会主动提到网站上的案例和认证信息，沟通效率高了很多。</p>
+        </div>
+        <div class="testi-person">
+          <span class="avatar a1">李</span>
+          <div><strong>李经理</strong><span>精密五金制造 · 外贸负责人</span></div>
+        </div>
+      </div>
+      <div class="testi reveal">
+        <div>
+          <div class="stars">★★★★★</div>
+          <div class="quote-mark">“</div>
+          <p>最认可的是他们真的去看我们的买家是谁、在哪个国家、关注什么。多语言版本上线后，西语市场的访问时长提升了将近一半，这在以前是想都不敢想的。</p>
+        </div>
+        <div class="testi-person">
+          <span class="avatar a2">陈</span>
+          <div><strong>陈女士</strong><span>家居用品品牌 · 联合创始人</span></div>
+        </div>
+      </div>
+      <div class="testi reveal">
+        <div>
+          <div class="stars">★★★★★</div>
+          <div class="quote-mark">“</div>
+          <p>作为技术型公司，我们很在意站点性能。他们给的方案在加载速度和安全性上都做得扎实，后期还提供数据看板，团队每周都会看询盘来源，决策依据更清楚了。</p>
+        </div>
+        <div class="testi-person">
+          <span class="avatar a3">王</span>
+          <div><strong>王工</strong><span>工业自动化设备 · 海外市场部</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMMUNITY / RESOURCES ============ -->
+<section class="section community" id="resources">
+  <div class="container">
+    <div class="community-head reveal">
+      <div>
+        <span class="eyebrow" style="color:#3ee6b8">COMMUNITY & INSIGHTS</span>
+        <h2>社区、专栏与持续更新的出海经验</h2>
+      </div>
+      <p>我们相信经验共享会让整个行业更好。这里记录方法、案例与踩过的坑。</p>
+    </div>
+    <div class="res-grid">
+      <article class="res-card reveal">
+        <span class="res-tag">方法论</span>
+        <h3>外贸站信息架构的六个常见误区</h3>
+        <p>把产品分类做得像仓库目录，是许多外贸站点转化低的核心原因之一。理解买家决策顺序，比堆砌参数更重要。</p>
+        <div class="res-meta"><span>阅读 8 分钟</span><b>运营团队</b></div>
+      </article>
+      <article class="res-card reveal">
+        <span class="res-tag">案例复盘</span>
+        <h3>从 0 到 1 搭建西语市场独立站</h3>
+        <p>一个家居品牌的拉美市场进入记录：语言、支付、物流与信任元素如何一步步补齐，最终形成可复制的模板。</p>
+        <div class="res-meta"><span>阅读 12 分钟</span><b>项目组</b></div>
+      </article>
+      <article class="res-card reveal">
+        <span class="res-tag">工具清单</span>
+        <h3>站点性能自查的十个关键指标</h3>
+        <p>加载速度、首屏渲染、移动适配、结构化数据……一份可以直接拿去用的自查清单，帮助团队快速定位问题。</p>
+        <div class="res-meta"><span>阅读 6 分钟</span><b>技术组</b></div>
+      </article>
+      <article class="res-card reveal">
+        <span class="res-tag">社区活动</span>
+        <h3>每月一次的出海站点开放诊断</h3>
+        <p>面向外贸企业开放线上诊断名额，由资深顾问逐页查看站点，给出优先级明确的改进建议，不收取费用。</p>
+        <div class="res-meta"><span>每月 15 日</span><b>限额 30 家</b></div>
+      </article>
+      <article class="res-card reveal">
+        <span class="res-tag">内容策略</span>
+        <h3>行业内容如何写出买家愿意读的样子</h3>
+        <p>从产品说明文转向问题解决型内容，是自然流量增长的关键。我们分享几个实际改写前后的对比案例。</p>
+        <div class="res-meta"><span>阅读 10 分钟</span><b>内容组</b></div>
+      </article>
+      <article class="res-card reveal">
+        <span class="res-tag">合规提示</span>
+        <h3>海外站点隐私与条款的常见合规要点</h3>
+        <p>不同市场对隐私政策、Cookie 提示与数据存储有不同要求，早点处理，能避免后续不必要的麻烦。</p>
+        <div class="res-meta"><span>阅读 7 分钟</span><b>顾问团队</b></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section faq" id="faq">
+  <div class="container faq-wrap">
+    <div class="reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2>关于合作，你可能想知道</h2>
+      <p class="lead" style="margin-top:18px">如果没有找到答案，欢迎直接联系我们，顾问会在一个工作日内回复。</p>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-q">一个外贸独立站的建设周期大概多久？<span class="plus">+</span></button>
+        <div class="faq-a"><p>标准项目从需求确认到上线约为 3～6 周，具体取决于页面数量、多语言版本与素材准备情况。若企业已有品牌视觉与产品资料，周期会明显缩短；若需要同步梳理内容与拍摄素材，我们会给出分阶段上线方案。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">站点上线后，我们团队需要具备技术能力吗？<span class="plus">+</span></button>
+        <div class="faq-a"><p>不需要。我们提供可视化后台与操作培训，日常更新产品、发布新闻与查看询盘都可以由市场或业务人员完成。技术层面的安全、备份与性能维护由我们持续负责。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">多语言版本是机器翻译吗？<span class="plus">+</span></button>
+        <div class="faq-a"><p>不是。我们采用术语表加人工校对的流程，确保产品名称、参数与行业表达准确一致，同时根据目标市场的表达习惯调整语气与结构，而不是逐字直译。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">如何衡量站点是否有效？<span class="plus">+</span></button>
+        <div class="faq-a"><p>我们会共同确定几个核心指标，例如自然搜索访问量、询盘数量、询盘来源结构与页面停留时长，并在固定周期提供数据报告。指标不是用来堆砌好看的数字，而是帮助判断下一步该优化什么。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">是否支持已有站点的改造与迁移？<span class="plus">+</span></button>
+        <div class="faq-a"><p>支持。我们会先做现状诊断，评估结构、性能、内容与合规情况，再决定是局部优化还是整体重建。迁移过程中会尽量保留已有搜索收录与外部链接价值，避免流量断崖。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">合作方式与费用结构是怎样的？<span class="plus">+</span></button>
+        <div class="faq-a"><p>通常分为一次性建设与持续性运营两部分，按项目范围报价，费用透明、节点清晰。我们不设隐藏项，也会在方案阶段明确说明哪些工作由双方共同完成。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="section" id="contact" style="padding-top:0">
+  <div class="container">
+    <div class="cta reveal">
+      <div>
+        <span class="eyebrow" style="color:#8fd8c6">START A CONVERSATION</span>
+        <h2>让下一个海外买家，从你的站点开始信任你</h2>
+        <p>留下你的站点或需求，我们会提供一份免费的初步诊断，包含结构、性能与转化路径的具体建议。不推销，只给判断。</p>
+      </div>
+      <div class="cta-actions">
+        <a class="btn btn-light" href="mailto:hello@sitetradehelpcn.com">发送项目需求 →</a>
+        <a class="btn btn-outline" href="#services">先看看服务内容</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site">
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="logo" href="/">
+          <span class="logo-mark">ST</span>
+          <span>sitetradehelpcn<small>GLOBAL TRADE STUDIO</small></span>
+        </a>
+        <p>专注外贸独立站建设与跨境交易服务，帮助中国制造与品牌以更专业的方式连接全球买家。</p>
+        <div class="foot-social">
+          <a href="#" aria-label="微信公众号">微信</a>
+          <a href="#" aria-label="领英">in</a>
+          <a href="#" aria-label="视频号">视频</a>
+          <a href="#" aria-label="邮件">@</a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>服务</h4>
+        <ul>
+          <li><a href="#services">独立站建设</a></li>
+          <li><a href="#services">多语言本地化</a></li>
+          <li><a href="#services">跨境交易支持</a></li>
+          <li><a href="#services">SEO 内容策略</a></li>
+          <li><a href="#services">站点运维监测</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>资源</h4>
+        <ul>
+          <li><a href="#resources">出海方法论</a></li>
+          <li><a href="#resources">案例复盘</a></li>
+          <li><a href="#resources">工具清单</a></li>
+          <li><a href="#faq">常见问题</a></li>
+          <li><a href="#resources">社区活动</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>联系</h4>
+        <ul>
+          <li><a href="mailto:hello@sitetradehelpcn.com">hello@sitetradehelpcn.com</a></li>
+          <li><a href="tel:+8600000000000">+86 000 0000 0000</a></li>
+          <li><a href="#contact">预约站点诊断</a></li>
+          <li><a href="#">隐私政策</a></li>
+          <li><a href="#">服务条款</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year">2025</span> sitetradehelpcn · 全球贸易数字服务工作室</span>
+      <span>让每一个中国品牌被世界看见 · <a href="#contact">开始合作</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  /* year */
+  var y = document.getElementById('year');
+  if(y){ y.textContent = new Date().getFullYear(); }
+
+  /* clock */
+  function pad(n){return n<10?'0'+n:''+n;}
+  function tickClock(){
+    var el = document.getElementById('clock');
+    if(!el) return;
+    var d = new Date();
+    var utc = d.getTime() + d.getTimezoneOffset()*60000;
+    var t = new Date(utc + 8*3600000);
+    el.textContent = 'UTC+08 ' + pad(t.getHours()) + ':' + pad(t.getMinutes()) + ':' + pad(t.getSeconds());
+  }
+  tickClock();
+  setInterval(tickClock, 1000);
+
+  /* burger */
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('navLinks');
+  if(burger && navLinks){
+    burger.addEventListener('click', function(){
+      navLinks.classList.toggle('open');
+    });
+    navLinks.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){ navLinks.classList.remove('open'); }
+    });
+  }
+
+  /* reveal on scroll */
+  var revealEls = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          en.target.classList.add('in');
+          io.unobserve(en.target);
+        }
+      });
+    }, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+    revealEls.forEach(function(el){ io.observe(el); });
+  } else {
+    revealEls.forEach(function(el){ el.classList.add('in'); });
+  }
+
+  /* counter animation */
+  var counted = false;
+  function animateCounters(){
+    if(counted) return;
+    counted = true;
+    document.querySelectorAll('[data-count]').forEach(function(el){
+      var target = parseFloat(el.getAttribute('data-count'));
+      var prefix = el.getAttribute('data-prefix') || '';
+      var suffix = el.getAttribute('data-suffix') || '';
+      var dur = 1600;
+      var start = performance.now();
+      function frame(now){
+        var p = Math.min((now-start)/dur, 1);
+        var eased = 1 - Math.pow(1-p, 3);
+        var val = Math.round(target*eased);
+        el.textContent = prefix + val.toLocaleString('en-US') + suffix;
+        if(p < 1){ requestAnimationFrame(frame); }
+      }
+      requestAnimationFrame(frame);
+    });
+  }
+
+  var statsSection = document.getElementById('stats');
+  if(statsSection){
+    if('IntersectionObserver' in window){
+      var sio = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){
+          if(en.isIntersecting){ animateCounters(); sio.disconnect(); }
+        });
+      }, {threshold:0.25});
+      sio.observe(statsSection);
+    } else {
+      animateCounters();
+    }
+  }
+
+  /* progress bars */
+  var bars = document.querySelectorAll('[data-bar]');
+  if(bars.length){
+    if('IntersectionObserver' in window){
+      var bio = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){
+          if(en.isIntersecting){
+            var el = en.target;
+            el.style.width = el.getAttribute('data-bar') + '%';
+            bio.unobserve(el);
+          }
+        });
+      }, {threshold:0.4});
+      bars.forEach(function(b){ bio.observe(b); });
+    } else {
+      bars.forEach(function(b){ b.style.width = b.getAttribute('data-bar') + '%'; });
+    }
+  }
+
+  /* FAQ accordion */
+  var faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(function(item){
+    var q = item.querySelector('.faq-q');
+    var a = item.querySelector('.faq-a');
+    if(!q || !a) return;
+    q.addEventListener('click', function(){
+      var isOpen = item.classList.contains('open');
+      faqItems.forEach(function(other){
+        other.classList.remove('open');
+        var oa = other.querySelector('.faq-a');
+        if(oa){ oa.style.maxHeight = '0px'; }
+      });
+      if(!isOpen){
+        item.classList.add('open');
+        a.style.maxHeight = a.scrollHeight + 'px';
+      }
+    });
+  });
+
+  /* smooth anchor offset for sticky header */
+  document.querySelectorAll('a[href^="#"]').forEach(function(link){
+    link.addEventListener('click', function(e){
+      var id = this.getAttribute('href');
+      if(id && id.length > 1){
+        var target = document.querySelector(id);
+        if(target){
+          e.preventDefault();
+          var offset = 78;
+          var top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({top: top, behavior:'smooth'});
+        }
+      }
+    });
+  });
+
+  /* subtle parallax on hero visual */
+  var visual = document.querySelector('.hero-visual');
+  if(visual && window.matchMedia('(min-width: 1081px)').matches){
+    window.addEventListener('scroll', function(){
+      var y = window.pageYOffset;
+      if(y < 900){
+        visual.style.transform = 'translateY(' + (y * 0.04) + 'px)';
+      }
+    }, {passive:true});
+  }
+})();
+</script>
+</body>
+  </html>
